@@ -60,13 +60,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    /*** This Method Displays Text(student's name and Total score) on TextView**/
+/*** This Method Displays Text(student's name and Total score) on TextView**/
     public void display(String message) {
         TextView gradeTextView = (TextView) findViewById(R.id.grade_view);
         gradeTextView.setText(message);
     }
 
-    /*** This Method is called when submit button is clicked**/
+/*** This Method is called when submit button is clicked**/
     public void submit(View view) {
         EditText nameField = (EditText) findViewById(R.id.name_field);
         String name = nameField.getText().toString();
@@ -104,8 +104,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, name, Toast.LENGTH_LONG).show();
         display(name);
     }
-
-    //** This method aggregates all scores obtainable on legendaryQuiz**//
+//** This method aggregates all scores obtainable on legendaryQuiz**//
     private int calculateGrade(Boolean n, Boolean g, String ngrCap, String rusCap, Boolean cr7, boolean lio, boolean ron) {
         CheckBox nig = (CheckBox) findViewById(R.id.naija);
         Boolean abj = nig.isChecked();
