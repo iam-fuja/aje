@@ -380,7 +380,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:onClick="submit"
-                android:text="SUBMIT" />
+                android:text="SUBMIT/RESET" />
 
             <Button
                 android:id="@+id/reset"
@@ -388,7 +388,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:onClick="submit"
-                android:text="RESET" />
+                android:text="CLEAR" />
 
         </LinearLayout>
 
