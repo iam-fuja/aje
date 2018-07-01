@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//* The following holds instances of all legendaryQuiz data entry points*//
+//* The following holds instances of all legendaryQuiz  valid data entry points*//
         final EditText nameField = (EditText) findViewById(R.id.name_field);
         final EditText ngr = (EditText) findViewById(R.id.naija_capital);
         final EditText rus = (EditText) findViewById(R.id.russia_capital);
@@ -40,9 +40,8 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // nameField.setText("");
+// The following lines resets every valid data interaction points on Legendary App**//
                 nameField.getText().clear();
-                // ngr.getText().clear();
                 ngr.setText("");
                 rus.setText("");
                 rg1.clearCheck();
@@ -56,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 roberto.setChecked(false);
                 ronaldh.setChecked(false);
                 lionel.setChecked(false);
+                score = 0;
             }
         });
     }
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         display(name);
     }
 
-    //** This method call aggregates all scores obtainable on legendaryQuiz**//
+    //** This method aggregates all scores obtainable on legendaryQuiz**//
     private int calculateGrade(Boolean n, Boolean g, String ngrCap, String rusCap, Boolean cr7, boolean lio, boolean ron) {
         CheckBox nig = (CheckBox) findViewById(R.id.naija);
         Boolean abj = nig.isChecked();
